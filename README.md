@@ -9,9 +9,13 @@ The RxCookbook is much like this repository. It's just a collection of code snip
 
 [RxCookbook](https://github.com/LeeCampbell/RxCookbook)
 
+### RxMarbles
+
+Sometimes you just need to visualize what a certain Rx operator is doing to the stream. Well, [RxMarbles](http://rxmarbles.com) is fantastic at this. I go here whenever I don't quite _get it_.
+
 ### Pausable
 
-I first noticed this at [rxmarbles.com](http://rxmarbles.com), but that is for the JavaScript libraries. The `Pausable` filter wasn't available in C#. So I went searching and found [this post on Stack Overflow](http://stackoverflow.com/questions/7620182/pause-and-resume-subscription-on-cold-iobservable). It does the trick.
+I first noticed this at [RxMarbles](http://rxmarbles.com), but that is for the JavaScript libraries. The `Pausable` filter wasn't available in C#. So I went searching and found [this post on Stack Overflow](http://stackoverflow.com/questions/7620182/pause-and-resume-subscription-on-cold-iobservable). It does the trick.
 
 ```c#
 public static IObservable<T> Pausable<T>(
