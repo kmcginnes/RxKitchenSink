@@ -15,7 +15,7 @@ Sometimes you just need to visualize what a certain Rx operator is doing to the 
 
 ### Pausable
 
-I first noticed this at [RxMarbles](http://rxmarbles.com), but that is for the JavaScript libraries. The `Pausable` filter wasn't available in C#. So I went searching and found [this post on Stack Overflow](http://stackoverflow.com/questions/7620182/pause-and-resume-subscription-on-cold-iobservable). It does the trick.
+I first noticed this at [RxMarbles](http://rxmarbles.com), but that is for the JavaScript libraries. The `Pausable` operator wasn't available in C#. So I went searching and found [this post on Stack Overflow](http://stackoverflow.com/questions/7620182/pause-and-resume-subscription-on-cold-iobservable). It does the trick.
 
 ```c#
 public static IObservable<T> Pausable<T>(
